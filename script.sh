@@ -1,7 +1,9 @@
 #!/bin/bash
+before=$1
+after=$2
 
 # before.mp4 is the original video file, and after.mp4 is the output file
-ffmpeg -i before.mp4 \
+ffmpeg -i $before \
 -c:v libx264 \
 -profile:v baseline \
 -level 2.1 \
@@ -14,4 +16,4 @@ ffmpeg -i before.mp4 \
 -ar 44100 \
 -b:a 128k \
 -movflags +faststart \
-after.mp4
+$after
