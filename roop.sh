@@ -25,8 +25,8 @@ dl-loop() {
   local amount="$5"
   local identifier="$6"
   local ext="mp4"
-  local before="${source_dir%/}/${title}${season}-${episode}.${ext}"
-  local after="${source_dir%/}/${title}${season}-${episode}${identifier}.${ext}"
+  local before="${source_dir%/}/${title}-${season}-${episode}.${ext}"
+  local after="${source_dir%/}/${title}-${season}-${episode}${identifier}.${ext}"
 
   echo "-------------------------------------------"
   echo "Processing: ${episode}"

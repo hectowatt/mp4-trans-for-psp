@@ -1,6 +1,7 @@
 # mp4-trans-for-psp
 yt-dlp等で取得したmp4ファイルをpspに転送するときに再生可能なフォーマットに変換するためのスクリプト
 ffmpegが必要です
+roop.shを使う場合はgnu-parallelも必要です
 
 
 ## 使用例
